@@ -20,3 +20,15 @@ Fun_iter (FI)
 The utils folder stores auxiliary functions for multiple algorithms, including auxiliary functions for attitude computation and error analysis functions.
 
 The config.m script serves as a common parameter configuration file, which defines the simulation duration, error parameters, and plotting parameters.Note that MATLAB plotting is only for demonstration purposes; all simulation results are exported to Excel format and subsequently plotted using OriginPro.
+
+Dynamic Coning Environment
+If you use the uploaded datasets, all programs can be run directly.
+If you want to generate coning data with arbitrary duration, coning angle, and angular frequency, please follow these steps:
+1. Modify coinc_data.m:
+Set coin_angle (coning angle, in degrees) and coin_anglur (angular frequency, in radians).
+Modify the total time T in config.m (unit: seconds).
+2. Modify the save settings in trj.m (the following two lines are used for angular increment observation and true attitude reference respectively):
+save(fullfile(save_path, 'theta_90.mat'), 'theta');
+save(fullfile(save_path, 'q_true_90.mat'), 'q_true');
+3. Run coinc_data.m.The coning data theta_90.mat and q_true_90.mat will be generated in the current directory.
+
