@@ -34,3 +34,5 @@ save(fullfile(save_path, 'q_true_90.mat'), 'q_true');
 
 # large-angle maneuver environment
 The large-angle maneuver environment adopts a fixed model with no additional configuration required. Except for this difference, all operations are consistent with those under the dynamic coning condition.
+
+During the experimental comparison at 500 Hz in the large-angle maneuver environment, MATLAB reported an error during matrix inversion. Therefore, the function for inverting the coefficient matrix was replaced with the pseudo-inverse function.
