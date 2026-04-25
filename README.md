@@ -32,3 +32,5 @@ save(fullfile(save_path, 'theta_90.mat'), 'theta');
 save(fullfile(save_path, 'q_true_90.mat'), 'q_true');
 3. Run coinc_data.m.The coning data theta_90.mat and q_true_90.mat will be generated in the current directory.
 
+large-angle maneuver environment
+The large-angle maneuver environment adopts a fixed model with no additional configuration required. Except for this difference, all operations are consistent with those under the dynamic coning condition.
