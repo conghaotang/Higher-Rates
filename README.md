@@ -19,3 +19,4 @@ Fun_iter (FI)
 
 The utils folder stores auxiliary functions for multiple algorithms, including auxiliary functions for attitude computation and error analysis functions.
 
+The config.m script serves as a common parameter configuration file, which defines the simulation duration, error parameters, and plotting parameters.Note that MATLAB plotting is only for demonstration purposes; all simulation results are exported to Excel format and subsequently plotted using OriginPro.
